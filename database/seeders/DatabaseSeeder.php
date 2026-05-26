@@ -13,9 +13,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        for ($id = 0; $id <= 3; $id++) { 
+        for ($id = 1; $id <= 3; $id++) { 
             DB::table('users')->insert([
-                'name' => 'User' . $id,
+                'name' => 'User ' . $id,
                 'email' => 'user_' . $id . '@gmail.com',
                 'password' => bcrypt('user' . $id),
                 'email_verified_at' => now(),
