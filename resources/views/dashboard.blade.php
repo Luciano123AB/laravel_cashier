@@ -23,5 +23,10 @@
         <p class="display-6">Dashboard!</p>
     </div>
 
+    <hr>
+
+    <div class="container">
+        <p>Subscrição termina em: <strong>{{ $subscription_end }}</strong></p>
+    </div>
 </body>
 </html>
