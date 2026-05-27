@@ -33,11 +33,12 @@
             </div>
             
             <div class="col-4 p-3">
-                <div class="border border-2 rounded-3 border-success p-5 text-center">
+                <div class="border border-5 rounded-3 border-success p-5 text-center bg-black">
                     <h3>Plano Anual</h1>
                     <hr>
                     <h1 class="text-center text-white">49.99$ / ano</h4>
                     <a href="#" class="btn btn-success mt-3 w-100">ASSINAR</a>
+                    <p class="text-center text-warning mt-3">Mais popular!</p>
                 </div>
             </div>
             
