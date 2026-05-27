@@ -63,10 +63,10 @@ class MainController extends Controller
     }
 
     public function subscriptionSuccess() {
-        echo "Subscrição realizada com sucesso!";
+        return view("subscription_success");
     }
 
     public function dashboard() {
-        echo "Dashboard!";
+        return view("dashboard");
     }
 }
