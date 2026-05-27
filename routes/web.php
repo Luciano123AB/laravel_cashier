@@ -15,4 +15,5 @@ Route::middleware([isUser::class])->group(function () {
     Route::get("/logout", [MainController::class, "logout"])->name("logout");
     Route::get("/plans", [MainController::class, "plans"])->name("plans");
     Route::get("/plan_selected/{id}", [MainController::class, "planSelected"])->name("plan.selected");
+    Route::get("/subscription/success", [MainController::class, "subscriptionSuccess"])->name("subscription.success");
 });
