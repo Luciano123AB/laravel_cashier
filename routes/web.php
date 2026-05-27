@@ -23,6 +23,7 @@ Route::middleware([isUser::class])->group(function () {
         
     Route::middleware([hasSubscription::class])->group(function () {
         Route::get("/subscription/success", [MainController::class, "subscriptionSuccess"])->name("subscription.success");
-        Route::get("/dashboard", [MainController::class, "dashboard"])->name("dashboard");    
+        Route::get("/dashboard", [MainController::class, "dashboard"])->name("dashboard");
+        Route::get("/invoice/{id}", [MainController::class, "invoiceDownload"])->name("invoice.download");
     });
 });
